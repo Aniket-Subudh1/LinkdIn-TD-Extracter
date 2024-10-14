@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", Arial, sans-serif;
+    background: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ebe261 40%, #00A0DC 100%);
+}
+
+.container {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    width: 400px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #0077B5;
+    font-size: 24px;
+    margin: 0;
+}
+
+.form {
+    margin-bottom: 1.5em;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 119, 181, 0.5);
+}
+
+.btn {
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005c92;
+}
+
+.clear {
+    background-color: #ff6b6b;
+}
+
+.clear:hover {
+    background-color: #e85d5d;
+}
+
+.output {
+    margin-top: 20px;
+    color: #333;
+}
+
+.result {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
